@@ -59,6 +59,20 @@
         <processorPath useClasspath="true" />
         <module name="fastdfs-client-java" />
       </profile>
+      <profile default="false" name="Annotation profile for taotao-rest" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="taotao-rest" />
+      </profile>
+      <profile default="false" name="Annotation profile for taotao-portal" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="taotao-portal" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="fastdfs-client-java" target="1.5" />
@@ -69,6 +83,8 @@
       <module name="taotao-manager-service" target="1.7" />
       <module name="taotao-manager-web" target="1.7" />
       <module name="taotao-parent" target="1.7" />
+      <module name="taotao-portal" target="1.7" />
+      <module name="taotao-rest" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

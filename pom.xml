@@ -11,6 +11,8 @@
     <modules>
         <module>taotao-common</module>
         <module>taotao-manager</module>
+        <module>taotao-rest</module>
+        <module>taotao-portal</module>
     </modules>
     <!-- 集中定义依赖版本号 -->
     <properties>
@@ -37,6 +39,8 @@
         <jedis.version>2.7.2</jedis.version>
         <solrj.version>4.10.3</solrj.version>
         <fastdfs-client-java>1.25</fastdfs-client-java>
+        <freemarker.version>2.3.23</freemarker.version>
+        <quartz.version>2.2.2</quartz.version>
     </properties>
     <!-- 只定义依赖的版本，并不实际依赖 -->
     <dependencyManagement>
@@ -188,6 +192,16 @@
                 <groupId>org.csource</groupId>
                 <artifactId>fastdfs-client-java</artifactId>
                 <version>${fastdfs-client-java}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.freemarker</groupId>
+                <artifactId>freemarker</artifactId>
+                <version>${freemarker.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.quartz-scheduler</groupId>
+                <artifactId>quartz</artifactId>
+                <version>${quartz.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
